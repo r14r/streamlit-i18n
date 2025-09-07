@@ -92,11 +92,13 @@ just run # streamlit run Home.py
 
 ### Project Layout
 
+```bash
 .
 ├── streamlit-i18n/        # Runtime helpers
 ├── streamlit-i18n-cli/    # CLI tool
 ├── demo/                  # Scaffolded demo project
 └── tests/                 # Pytest-based test suite
+```
 
 #### Justfile
 
