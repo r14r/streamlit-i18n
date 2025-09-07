@@ -1,0 +1,86 @@
+app:
+  title: "Streamlit i18n – Demo (ES)"
+  desc: "Aplicación de ejemplo con dataclasses pre-generadas y respaldo en inglés."
+  copyright: "© {year} Tu empresa"
+  locale_name: "Español (ES)"
+  current_user: "Conectado como: {name}"
+
+nav:
+  home: "Inicio"
+  about: "Acerca de"
+  contact: "Contacto"
+  settings: "Ajustes"
+  logout: "Cerrar sesión"
+  language: "Idioma"
+
+messages:
+  welcome: "¡Bienvenido, {name}!"
+  items_found: "{count} elementos encontrados"
+  saved: "Guardado correctamente."
+  updated: "Actualizado correctamente."
+  deleted: "Elemento eliminado."
+  confirm_delete: "¿Seguro que deseas eliminar “{title}”?"
+
+errors:
+  required: "Este campo es obligatorio."
+  invalid_email: "Introduce un correo electrónico válido."
+  too_short: "El valor es demasiado corto (mín. {min} caracteres)."
+  unauthorized: "No autorizado."
+  not_found: "No encontrado."
+  server: "Error de servidor inesperado. Inténtalo de nuevo más tarde."
+
+forms:
+  login:
+    title: "Iniciar sesión"
+    email: "Correo"
+    password: "Contraseña"
+    submit: "Entrar"
+    forgot: "¿Olvidaste tu contraseña?"
+  profile:
+    title: "Perfil"
+    name: "Nombre"
+    bio: "Biografía"
+    save: "Guardar"
+
+pages:
+  home:
+    title: "Inicio"
+    lead: "Esta es la página de inicio de tu demo."
+    cta_primary: "Comenzar"
+    cta_secondary: "Saber más"
+  page1:
+    title: "Página 1 – Resumen"
+    desc: "Esta página muestra un resumen con valores dinámicos."
+    card_title: "Resumen"
+    card_text: "Usuarios: {users}, Proyectos: {projects}, Tareas: {tasks}"
+  page2:
+    title: "Página 2 – Detalles"
+    desc: "Información detallada y acciones."
+    edit: "Editar"
+    delete: "Eliminar"
+    back: "Volver"
+  admin:
+    title: "Administración"
+    users: "Gestión de usuarios"
+    roles: "Roles y permisos"
+    audit: "Registro de auditoría"
+
+table:
+  users:
+    title: "Usuarios"
+    col_name: "Nombre"
+    col_email: "Correo"
+    col_role: "Rol"
+    empty: "No se encontraron usuarios."
+  projects:
+    title: "Proyectos"
+    col_title: "Título"
+    col_owner: "Responsable"
+    col_status: "Estado"
+    empty: "No hay proyectos disponibles."
+
+footer:
+  links_title: "Enlaces"
+  imprint: "Aviso legal"
+  privacy: "Privacidad"
+  help: "Ayuda"

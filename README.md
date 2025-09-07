@@ -1,5 +1,7 @@
 # Streamlit i18n Monorepo
 
+![Start Page](doc/startpage.png)
+
 Internationalization (i18n) toolkit for Streamlit apps.  
 This repository contains two related packages:
 
