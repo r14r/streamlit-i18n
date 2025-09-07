@@ -1,0 +1,154 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "${workspaceFolder}/.venv/python/3.11/bin/python",
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+			"**/__pycache__": true,
+			"**/.venv": true,
+			".envrc": true,
+			".set_env.sh": true,
+			".vscode.bkp": true,
+			".vscode.ext": true,
+			".vscode.usr": true,
+			"**/.vscode.usr": true,
+			"**/.vscode.ext": true,
+			"**/.embeddings_cache": true,
+			".embeddings_cache": true,
+			"**/.pytest_cache": true,
+			".pytest_cache": true
+		},
+		"explorerExclude.backup": {},
+		"todo-tree.general.tags": [
+			"BUG",
+			"HACK",
+			"FIXME",
+			"TODO",
+			"XXX",
+			"[ ]",
+			"[x]",
+			"ERROR"
+		],
+		"python-envs.pythonProjects": [
+			{
+				"path": "",
+				"envManager": "ms-python.python:venv",
+				"packageManager": "ms-python.python:pip"
+			}
+		],
+		"git.ignoreLimitWarning": true
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Streamlit",
+				"type": "debugpy",
+				"request": "launch",
+				"module": "streamlit",
+				"python": "${workspaceFolder}/.venv/python/3.11/bin/python",
+				"cwd": "${workspaceFolder}/app",
+				"args": [
+					"run",
+					"app.py",
+					"--server.port",
+					"28100"
+				]
+			},
+			{
+				"name": "Streamlit: Current File",
+				"type": "debugpy",
+				"request": "launch",
+				"module": "streamlit",
+				"python": "${workspaceFolder}/.venv/python/3.11/bin/python",
+				"cwd": "${fileDirname}",
+				"args": [
+					"run",
+					"${file}",
+					"--server.port",
+					"28100"
+				]
+			},
+			{
+				"name": "Generate I18N Keys",
+				"type": "python",
+				"request": "launch",
+				"program": "${workspaceFolder}/bin/gen_i18n_keys.py",
+				"console": "integratedTerminal",
+				"justMyCode": true,
+				"env": {
+					"PYTHONPATH": "${workspaceFolder}/app${env:PYTHONPATH:+:${env:PYTHONPATH}}"
+				},
+				"args": [
+					"-o",
+					"out/keys.py",
+					"app/lib/i18n/locales/de.json"
+				]
+			},
+			{
+				"name": "Python: Current File",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal",
+				"justMyCode": true,
+				"env": {
+					"PYTHONPATH": "${workspaceFolder}/app${env:PYTHONPATH:+:${env:PYTHONPATH}}"
+				}
+			},
+			{
+				"name": "Debug VSCode",
+				"type": "debugpy",
+				"request": "launch",
+				"program": "${workspaceFolder}/bin/parameters.py",
+				"console": "integratedTerminal",
+				"justMyCode": true,
+				"env": {
+					"PYTHONPATH": "${workspaceFolder}/app${env:PYTHONPATH:+:${env:PYTHONPATH}}"
+				},
+				"args": [
+					"workspaceFolder=${workspaceFolder}",
+					"workspaceFolderBasename=${workspaceFolderBasename}",
+					"userHome=${userHome}",
+					"file=${file}",
+					"relativeFile=${relativeFile}",
+					"relativeFileDirname=${relativeFileDirname}",
+					"fileDirname=${fileDirname}",
+					"fileDirnameBasename=${fileDirnameBasename}",
+					"fileBasename=${fileBasename}",
+					"fileBasenameNoExtension=${fileBasenameNoExtension}",
+					"fileExtname=${fileExtname}",
+					"cwd=${cwd}",
+					"execPath=${execPath}",
+					"pathSeparator=${pathSeparator}",
+					"defaultBuildTask=${defaultBuildTask}"
+				]
+			},
+		]
+	},
+	"extensions": {
+		"recommendations": [
+			"charliermarsh.ruff",
+			"github.copilot",
+			"github.copilot-chat",
+			"gruntfuggly.todo-tree",
+			"ms-azuretools.vscode-containers",
+			"ms-python.debugpy",
+			"ms-python.python",
+			"ms-python.vscode-pylance",
+			"ms-vscode-remote.remote-containers",
+			"ms-vscode.live-server",
+			"ms-windows-ai-studio.windows-ai-studio",
+			"onatm.open-in-new-window",
+			"peterschmalfeldt.explorer-exclude"
+		]
+	}
+}

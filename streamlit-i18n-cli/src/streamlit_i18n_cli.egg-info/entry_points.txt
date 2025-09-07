@@ -1,0 +1,2 @@
+[console_scripts]
+streamlit-i18n = streamlit_i18n_cli.cli:main

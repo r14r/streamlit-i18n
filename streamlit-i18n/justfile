@@ -1,0 +1,50 @@
+# Justfile — safe commands for linting & tests
+
+# Default recipe
+default:
+	cat justfile
+
+# Ensure pre-commit hooks are installed into .git/hooks
+pre-commit-install:
+	pre-commit install
+	pre-commit install --hook-type pre-push
+
+# Run all configured hooks on all files
+pre-commit-all:
+	pre-commit run -a
+
+# Lint (explicit common hooks)
+lint:
+	pre-commit run ruff -a
+	pre-commit run isort -a
+	pre-commit run black -a
+	# Optional extras (uncomment if you enabled these hooks in .pre-commit-config.yaml)
+	# pre-commit run codespell -a
+	# pre-commit run bandit -a
+	# pre-commit run mypy -a
+	# pre-commit run docformatter -a
+
+# Type checking (direct call, independent of pre-commit)
+typecheck:
+	python -m mypy .
+
+# Security scan (direct call)
+security:
+	python -m bandit -ll -q -r .
+
+# Format code directly (useful before committing)
+format:
+	python -m black -l 100 .
+	python -m isort --profile=black .
+
+# Run test suite (venv-safe)
+test:
+	python -m pytest -q
+
+# Verbose tests
+testv:
+	python -m pytest -vv
+
+# Clean pre-commit caches (in case of hook issues)
+pre-commit-clean:
+	pre-commit clean

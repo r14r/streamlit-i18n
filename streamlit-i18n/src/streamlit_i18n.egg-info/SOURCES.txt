@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/streamlit_i18n/__init__.py
+src/streamlit_i18n.egg-info/PKG-INFO
+src/streamlit_i18n.egg-info/SOURCES.txt
+src/streamlit_i18n.egg-info/dependency_links.txt
+src/streamlit_i18n.egg-info/requires.txt
+src/streamlit_i18n.egg-info/top_level.txt
+tests/test_runtime_basics.py
+tests/testimport_paths.py

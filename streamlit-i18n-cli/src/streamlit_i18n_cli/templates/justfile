@@ -1,0 +1,19 @@
+default:
+	@ecat justfile
+
+install:
+	pip install -e ../streamlit-i18n
+	pip install -e ../streamlit-i18n-cli
+
+generate:
+	streamlit-i18n generate -i lib/i18n/locales/en.yml -o lib/i18n/dataclasses.py --rename pages=PAGES
+
+run:
+	streamlit run Home.py
+
+run-demo *ARGS:
+	python demo.py {{ARGS}}
+
+test:
+	python -m pytest -q
+

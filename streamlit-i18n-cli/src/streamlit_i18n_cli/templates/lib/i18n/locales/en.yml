@@ -1,0 +1,86 @@
+app:
+  title: "Streamlit i18n – Demo (EN)"
+  desc: "Sample app using pre-generated dataclasses with English fallback."
+  copyright: "© {year} Your Company"
+  locale_name: "English (EN)"
+  current_user: "Signed in as: {name}"
+
+nav:
+  home: "Home"
+  about: "About"
+  contact: "Contact"
+  settings: "Settings"
+  logout: "Logout"
+  language: "Language"
+
+messages:
+  welcome: "Welcome, {name}!"
+  items_found: "{count} items found"
+  saved: "Saved successfully."
+  updated: "Updated successfully."
+  deleted: "Item deleted."
+  confirm_delete: "Do you really want to delete “{title}”?"
+
+errors:
+  required: "This field is required."
+  invalid_email: "Please enter a valid email address."
+  too_short: "The value is too short (min. {min} characters)."
+  unauthorized: "Unauthorized."
+  not_found: "Not found."
+  server: "Unexpected server error. Please try again later."
+
+forms:
+  login:
+    title: "Sign in"
+    email: "Email"
+    password: "Password"
+    submit: "Log in"
+    forgot: "Forgot password?"
+  profile:
+    title: "Profile"
+    name: "Name"
+    bio: "Bio"
+    save: "Save"
+
+pages:
+  home:
+    title: "Home"
+    lead: "This is the home page of your demo."
+    cta_primary: "Get started"
+    cta_secondary: "Learn more"
+  page1:
+    title: "Page 1 – Overview"
+    desc: "This page shows an overview with dynamic values."
+    card_title: "Summary"
+    card_text: "Users: {users}, Projects: {projects}, Tasks: {tasks}"
+  page2:
+    title: "Page 2 – Details"
+    desc: "Detailed information and actions."
+    edit: "Edit"
+    delete: "Delete"
+    back: "Back"
+  admin:
+    title: "Administration"
+    users: "User Management"
+    roles: "Roles & Permissions"
+    audit: "Audit Log"
+
+table:
+  users:
+    title: "Users"
+    col_name: "Name"
+    col_email: "Email"
+    col_role: "Role"
+    empty: "No users found."
+  projects:
+    title: "Projects"
+    col_title: "Title"
+    col_owner: "Owner"
+    col_status: "Status"
+    empty: "No projects available."
+
+footer:
+  links_title: "Links"
+  imprint: "Imprint"
+  privacy: "Privacy"
+  help: "Help"

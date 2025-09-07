@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "streamlit-i18n-cli"
+version = "0.2.0"
+description = "CLI to generate dataclasses from YAML and scaffold Streamlit i18n pages"
+authors = [{ name = "Your Name"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["PyYAML>=6.0.1", "streamlit>=1.36", "streamlit-i18n>=0.2.0"]
+license = {text = "MIT"}
+keywords = ["streamlit", "i18n", "yaml", "dataclasses", "cli"]
+
+[project.urls]
+Homepage = "https://example.com/streamlit-i18n-cli"
+
+[project.scripts]
+streamlit-i18n = "streamlit_i18n_cli.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+py_version = 311
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+# Let ruff replace flake8 & isort rules; keep isort hook if you want
+lint.select = ["E","F","I","B","UP","SIM","PIE","PT","RUF"]
+lint.ignore = []
+exclude = ["lib/i18n/locales/*", ".venv/*", "build/*", "dist/*"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true
+pretty = true
+warn_unreachable = true

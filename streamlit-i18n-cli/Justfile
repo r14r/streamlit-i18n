@@ -1,0 +1,26 @@
+# Install runtime + CLI (editable mode)
+install:
+	pip install -e ../streamlit-i18n
+	pip install -e .
+
+# Show scaffold help
+help:
+	streamlit-i18n scaffold --help
+
+# Scaffold a demo project into ./demo
+scaffold-demo:
+	streamlit-i18n scaffold --into demo
+
+# Scaffold with a custom dataclasses output path
+scaffold-out:
+	streamlit-i18n scaffold --into demo --out src/i18n/dataclasses_.py
+
+# Generate dataclasses from example locales (expects a project with locales in ./locales)
+generate:
+	streamlit-i18n generate -i locales/en.yml -o i18n/dataclasses_.py --rename menu=PAGES
+
+# Build and upload to PyPI (requires twine)
+deploy:
+	python -m build
+	twine upload dist/*
+

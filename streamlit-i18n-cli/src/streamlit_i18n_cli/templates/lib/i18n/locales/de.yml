@@ -1,0 +1,86 @@
+app:
+  title: "Streamlit i18n – Demo (DE)"
+  desc: "Beispielanwendung für vor-generierte Dataclasses mit Fallback auf Englisch."
+  copyright: "© {year} Deine Firma"
+  locale_name: "Deutsch (DE)"
+  current_user: "Angemeldet als: {name}"
+
+nav:
+  home: "Start"
+  about: "Über"
+  contact: "Kontakt"
+  settings: "Einstellungen"
+  logout: "Abmelden"
+  language: "Sprache"
+
+messages:
+  welcome: "Willkommen, {name}!"
+  items_found: "{count} Elemente gefunden"
+  saved: "Erfolgreich gespeichert."
+  updated: "Aktualisierung erfolgreich."
+  deleted: "Eintrag gelöscht."
+  confirm_delete: "Möchtest du „{title}“ wirklich löschen?"
+
+errors:
+  required: "Dieses Feld ist erforderlich."
+  invalid_email: "Bitte eine gültige E-Mail-Adresse eingeben."
+  too_short: "Der Wert ist zu kurz (min. {min} Zeichen)."
+  unauthorized: "Nicht autorisiert."
+  not_found: "Nicht gefunden."
+  server: "Unerwarteter Serverfehler. Bitte später erneut versuchen."
+
+forms:
+  login:
+    title: "Anmeldung"
+    email: "E-Mail"
+    password: "Passwort"
+    submit: "Einloggen"
+    forgot: "Passwort vergessen?"
+  profile:
+    title: "Profil"
+    name: "Name"
+    bio: "Kurzbeschreibung"
+    save: "Speichern"
+
+pages:
+  home:
+    title: "Startseite"
+    lead: "Das ist die Startseite deiner Demo."
+    cta_primary: "Jetzt starten"
+    cta_secondary: "Mehr erfahren"
+  page1:
+    title: "Seite 1 – Überblick"
+    desc: "Diese Seite zeigt eine Übersicht mit dynamischen Werten."
+    card_title: "Zusammenfassung"
+    card_text: "Nutzer: {users}, Projekte: {projects}, Tasks: {tasks}"
+  page2:
+    title: "Seite 2 – Details"
+    desc: "Detailinformationen und Aktionen."
+    edit: "Bearbeiten"
+    delete: "Löschen"
+    back: "Zurück"
+  admin:
+    title: "Administration"
+    users: "Benutzerverwaltung"
+    roles: "Rollen & Rechte"
+    audit: "Audit-Log"
+
+table:
+  users:
+    title: "Benutzer"
+    col_name: "Name"
+    col_email: "E-Mail"
+    col_role: "Rolle"
+    empty: "Keine Benutzer gefunden."
+  projects:
+    title: "Projekte"
+    col_title: "Titel"
+    col_owner: "Owner"
+    col_status: "Status"
+    empty: "Keine Projekte vorhanden."
+
+footer:
+  links_title: "Links"
+  imprint: "Impressum"
+  privacy: "Datenschutz"
+  help: "Hilfe"

@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: streamlit-i18n
+Version: 0.2.0
+Summary: Dataclass-based i18n runtime helpers for Streamlit projects
+Author: Your Name
+License: MIT
+Project-URL: Homepage, https://example.com/streamlit-i18n
+Keywords: streamlit,i18n,yaml,dataclasses
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: bandit>=1.8.6
+Requires-Dist: black>=25.1.0
+Requires-Dist: codespell>=2.4.1
+Requires-Dist: docformatter>=1.7.7
+Requires-Dist: isort>=6.0.1
+Requires-Dist: mypy>=1.17.1
+Requires-Dist: pre-commit>=4.3.0
+Requires-Dist: pytest>=8.4.2
+Requires-Dist: pyupgrade>=3.20.0
+Requires-Dist: PyYAML>=6.0.1
+Requires-Dist: ruff>=0.12.12
+
+# streamlit-i18n
+
+Runtime helpers to load YAML translations into **generated dataclasses** (`i18n/dataclasses_.py`) for use in Streamlit apps.
+
+## Install
+```bash
+pip install streamlit-i18n
+```
+
+## Usage
+```python
+from streamlit_i18n import init, t, set_lang, has, missing_keys
+init("de", locales_dir="locales", base_lang="en")
+```

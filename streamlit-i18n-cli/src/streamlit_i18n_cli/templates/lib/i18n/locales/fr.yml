@@ -1,0 +1,86 @@
+app:
+  title: "Streamlit i18n – Démo (FR)"
+  desc: "Application d’exemple avec dataclasses pré-générées et secours en anglais."
+  copyright: "© {year} Votre entreprise"
+  locale_name: "Français (FR)"
+  current_user: "Connecté en tant que : {name}"
+
+nav:
+  home: "Accueil"
+  about: "À propos"
+  contact: "Contact"
+  settings: "Paramètres"
+  logout: "Se déconnecter"
+  language: "Langue"
+
+messages:
+  welcome: "Bienvenue, {name} !"
+  items_found: "{count} éléments trouvés"
+  saved: "Enregistré avec succès."
+  updated: "Mise à jour réussie."
+  deleted: "Élément supprimé."
+  confirm_delete: "Voulez-vous vraiment supprimer « {title} » ?"
+
+errors:
+  required: "Ce champ est obligatoire."
+  invalid_email: "Veuillez saisir une adresse e-mail valide."
+  too_short: "La valeur est trop courte (min. {min} caractères)."
+  unauthorized: "Non autorisé."
+  not_found: "Introuvable."
+  server: "Erreur serveur inattendue. Réessayez plus tard."
+
+forms:
+  login:
+    title: "Connexion"
+    email: "E-mail"
+    password: "Mot de passe"
+    submit: "Se connecter"
+    forgot: "Mot de passe oublié ?"
+  profile:
+    title: "Profil"
+    name: "Nom"
+    bio: "Bio"
+    save: "Enregistrer"
+
+pages:
+  home:
+    title: "Accueil"
+    lead: "Page d’accueil de votre démo."
+    cta_primary: "Commencer"
+    cta_secondary: "En savoir plus"
+  page1:
+    title: "Page 1 – Vue d’ensemble"
+    desc: "Cette page affiche un aperçu avec des valeurs dynamiques."
+    card_title: "Résumé"
+    card_text: "Utilisateurs : {users}, Projets : {projects}, Tâches : {tasks}"
+  page2:
+    title: "Page 2 – Détails"
+    desc: "Informations détaillées et actions."
+    edit: "Modifier"
+    delete: "Supprimer"
+    back: "Retour"
+  admin:
+    title: "Administration"
+    users: "Gestion des utilisateurs"
+    roles: "Rôles et permissions"
+    audit: "Journal d’audit"
+
+table:
+  users:
+    title: "Utilisateurs"
+    col_name: "Nom"
+    col_email: "E-mail"
+    col_role: "Rôle"
+    empty: "Aucun utilisateur trouvé."
+  projects:
+    title: "Projets"
+    col_title: "Titre"
+    col_owner: "Responsable"
+    col_status: "Statut"
+    empty: "Aucun projet disponible."
+
+footer:
+  links_title: "Liens"
+  imprint: "Mentions légales"
+  privacy: "Confidentialité"
+  help: "Aide"
