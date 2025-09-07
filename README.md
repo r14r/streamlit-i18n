@@ -59,20 +59,24 @@ pip install -e ./streamlit-i18n
 pip install -e ./streamlit-i18n-cli
 ```
 
+Scaffold a demo application
+
+```bash
+streamlit-i18n scaffold --into demo
+```
+
+
 Generate dataclasses
 
 ```bash
+# Switch to demo app
+cd demo
+
 # Generate dataclasses from YAML
 streamlit-i18n generate \
   -i lib/i18n/locales/en.yml \
   -o i18n/dataclasses_.py \
   --rename menu=PAGES
-```
-
-Scaffold a demo application
-
-```bash
-streamlit-i18n scaffold --into demo
 ```
 
 Run the demo app
